@@ -15,7 +15,7 @@ int main() {
     cin >> eta;
     accumulatore = accumulatore + eta;
   }
-  media = (double)accumulatore / persone;
+  media = static_cast<double>(accumulatore) / persone;
   cout << "L'età media è di " << media << " anni." << endl;
 
   return 0;
